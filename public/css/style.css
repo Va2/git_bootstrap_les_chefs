@@ -7552,4 +7552,13 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 0;
     right: 0; }
 
+#meet {
+  background: #000000; }
+  #meet h3 {
+    color: #fff; }
+    #meet h3 span {
+      text-transform: uppercase;
+      font-size: 2.2rem;
+      color: #c42d40; }
+
 /*# sourceMappingURL=style.css.map */
