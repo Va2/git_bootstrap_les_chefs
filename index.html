@@ -10,66 +10,109 @@
 </head>
 <body>
     <header>
-        <!-- NAVBAR SECTION -->
-        <nav class="navbar navbar-expand-lg container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav align-items-center justify-content-between border-top border-bottom">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Menu List</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Team</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav align-items-center justify-content-center logo">
-                    <a class="navbar-brand" href="#">
-                        <img src="./public/images/logo.png" alt="Logo">
-                    </a>
-                </ul>
-                <ul class="navbar-nav align-items-center justify-content-between border-top border-bottom">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Reservation</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Testimonials</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    
-    <!-- CAROUSEL -->
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="carousel-caption d-none d-md-block">
-                    <h1>Whatever your <span>occasion, <span>taste</span></span>makes it one to remember!</h1>
+        <div class="bg-header">
+            <!-- NAVBAR SECTION -->
+            <nav class="navbar navbar-expand-lg container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav align-items-center justify-content-between border-top border-bottom">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Menu List</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Team</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav align-items-center justify-content-center logo">
+                        <a class="navbar-brand" href="#">
+                            <img src="./public/images/logo.png" alt="Logo">
+                        </a>
+                    </ul>
+                    <ul class="navbar-nav align-items-center justify-content-between border-top border-bottom">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Reservation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- CAROUSEL -->
+        <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Whatever your <span>occasion, <span>taste</span></span>makes it one to remember!</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
                 </div>
             </div>
-            <!-- <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+        </div> -->
+    </header>
+
+    <!-- OUR STORY & OUR MENU SECTION -->
+    <section id="story" class="py-5">
+        <div class="container p-0">
+
+            <!-- CORNER IMAGES -->
+            <div class="tl-img">
+                <img src="./public/images/box-left-top.png" alt="">
             </div>
-            <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-            </div> -->
+            <div class="tr-img">
+                <img src="./public/images/box-right-top.png" alt="">
+            </div>
+            <div class="bl-img">
+                <img src="./public/images/box-bottom-left.png" alt="">
+            </div>
+            <div class="br-img">
+                <img src="./public/images/box-bottom_right.png" alt="">
+            </div>
+
+            <!-- OUR STORY -->
+            <div class="jumbotron our-story py-0 text-center">
+                <h3><span>Our</span> Story</h3>
+                <div class="col-md-6 offset-md-3">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos numquam mollitia aspernatur nobis nihil exercitationem deleniti. Facilis quae, nihil debitis reprehenderit quas consequatur explicabo. Dolorum unde voluptatibus sapiente tempore aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae id sapiente eveniet quasi nesciunt quam, cum a beatae cumque, error quaerat, illum ab quod accusamus! Aperiam nostrum laudantium ratione nihil.</p>
+                </div>
+            </div>
+
+            <!-- OUR MENU LIST -->
+            <div class="jumbotron our-menu text-center">
+                <h3><span>Our</span> Menu List</h3>
+                <div class="col-md-6 offset-md-3">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos numquam mollitia aspernatur nobis nihil
+                        exercitationem deleniti. Facilis quae, nihil debitis reprehenderit quas consequatur explicabo. Dolorum unde
+                        voluptatibus sapiente tempore aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae id
+                        sapiente eveniet quasi nesciunt quam, cum a beatae cumque, error quaerat, illum ab quod accusamus! Aperiam
+                        nostrum laudantium ratione nihil.</p>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+    
 </body>
 </html>

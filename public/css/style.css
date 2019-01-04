@@ -7483,19 +7483,47 @@ a.text-dark:hover, a.text-dark:focus {
     display: flex;
     justify-content: space-between; }
     .navbar .navbar-nav li a {
-      color: #fff; }
+      color: #fff;
+      font-size: 14px;
+      text-transform: uppercase; }
+  .navbar .navbar-nav .active {
+    background: #c42d40; }
 .navbar .logo {
   width: 35%; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Courgette", cursive; }
 
-header {
+.bg-header {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../public/images/banner1.jpg) no-repeat center center;
   height: 900px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+
+#story {
+  background: url("../../public/images/main_bg.jpg"); }
+  #story .container {
+    background: #fff;
+    position: relative; }
+    #story .container .jumbotron {
+      background: none; }
+      #story .container .jumbotron h3 span {
+        text-transform: uppercase;
+        font-size: 2.2rem;
+        color: #c42d40; }
+  #story .tr-img {
+    position: absolute;
+    top: 0;
+    right: 0; }
+  #story .bl-img {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+  #story .br-img {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
 
 /*# sourceMappingURL=style.css.map */
