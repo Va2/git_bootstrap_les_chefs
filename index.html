@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="./public/css/style.css">
 </head>
 <body>
@@ -103,16 +104,198 @@
             <!-- OUR MENU LIST -->
             <div class="jumbotron our-menu text-center">
                 <h3><span>Our</span> Menu List</h3>
-                <div class="col-md-6 offset-md-3">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos numquam mollitia aspernatur nobis nihil
-                        exercitationem deleniti. Facilis quae, nihil debitis reprehenderit quas consequatur explicabo. Dolorum unde
-                        voluptatibus sapiente tempore aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae id
-                        sapiente eveniet quasi nesciunt quam, cum a beatae cumque, error quaerat, illum ab quod accusamus! Aperiam
-                        nostrum laudantium ratione nihil.</p>
+                <div class="row pb-5">
+                    <div class="col-2">
+                        <div class="nav flex-column nav-pills border-right" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link border-bottom active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+                                aria-controls="v-pills-home" aria-selected="true">
+                                <i class="fas fa-mug-hot fa-3x mb-2"></i><br>
+                                BreakFast
+                            </a>
+                            <a class="nav-link border-bottom" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                                aria-controls="v-pills-profile" aria-selected="false">
+                                <i class="fas fa-concierge-bell fa-3x mb-2"></i><br>
+                                Lunch
+                            </a>
+                            <a class="nav-link border-bottom" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+                                aria-controls="v-pills-messages" aria-selected="false">
+                                <i class="fas fa-cookie fa-3x mb-2"></i><br>
+                                Snacks
+                            </a>
+                            <a class="nav-link border-bottom" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+                                aria-controls="v-pills-settings" aria-selected="false">
+                                <i class="fas fa-coffee fa-3x mb-2"></i><br>
+                                Dinner
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                <div class="row align-items-center text-left">
+                                    <!-- ROW 1 -->
+                                    <div class="col-11">
+                                        <div class="media p-2 border-bottom">
+                                            <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="...">
+                                            <div class="media-body align-self-center text-secondary">
+                                                <h5 class="my-0">Dear Steak with Potatoes</h5>
+                                                Welcome to Risotto restaurent website. Here we try to share our
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <span class="badge badge-light px-2">$25</span>
+                                    </div>
+                                    <!-- ROW 2 -->
+                                    <div class="col-11">
+                                        <div class="media p-2 border-bottom">
+                                            <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="...">
+                                            <div class="media-body align-self-center text-secondary">
+                                                <h5 class="my-0">Dear Steak with Potatoes</h5>
+                                                Welcome to Risotto restaurent website. Here we try to share our
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <span class="badge badge-light px-2">$25</span>
+                                    </div>
+                                    <!-- ROW 3 -->
+                                    <div class="col-11">
+                                        <div class="media p-2 border-bottom">
+                                            <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="...">
+                                            <div class="media-body align-self-center text-secondary">
+                                                <h5 class="my-0">Dear Steak with Potatoes</h5>
+                                                Welcome to Risotto restaurent website. Here we try to share our
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <span class="badge badge-light px-2">$25</span>
+                                    </div>
+                                    <!-- ROW 4 -->
+                                    <div class="col-11">
+                                        <div class="media p-2 border-bottom">
+                                            <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="...">
+                                            <div class="media-body align-self-center text-secondary">
+                                                <h5 class="my-0">Dear Steak with Potatoes</h5>
+                                                Welcome to Risotto restaurent website. Here we try to share our
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <span class="badge badge-light px-2">$25</span>
+                                    </div>
+                                    <!-- ROW 5 -->
+                                    <div class="col-11">
+                                        <div class="media p-2 border-bottom">
+                                            <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="...">
+                                            <div class="media-body align-self-center text-secondary">
+                                                <h5 class="my-0">Dear Steak with Potatoes</h5>
+                                                Welcome to Risotto restaurent website. Here we try to share our
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <span class="badge badge-light px-2">$25</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                ...
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                ...
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                ...
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                <div class="row align-items-center text-left">
+                                    <!-- ROW 1 -->
+                                    <div class="col-11">
+                                        <div class="media p-2 border-bottom">
+                                            <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="...">
+                                            <div class="media-body align-self-center text-secondary">
+                                                <h5 class="my-0">Dear Steak with Potatoes</h5>
+                                                Welcome to Risotto restaurent website. Here we try to share our
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <span class="badge badge-light px-2">$25</span>
+                                    </div>
+                                    <!-- ROW 2 -->
+                                    <div class="col-11">
+                                        <div class="media p-2 border-bottom">
+                                            <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="...">
+                                            <div class="media-body align-self-center text-secondary">
+                                                <h5 class="my-0">Dear Steak with Potatoes</h5>
+                                                Welcome to Risotto restaurent website. Here we try to share our
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <span class="badge badge-light px-2">$25</span>
+                                    </div>
+                                    <!-- ROW 3 -->
+                                    <div class="col-11">
+                                        <div class="media p-2 border-bottom">
+                                            <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="...">
+                                            <div class="media-body align-self-center text-secondary">
+                                                <h5 class="my-0">Dear Steak with Potatoes</h5>
+                                                Welcome to Risotto restaurent website. Here we try to share our
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <span class="badge badge-light px-2">$25</span>
+                                    </div>
+                                    <!-- ROW 4 -->
+                                    <div class="col-11">
+                                        <div class="media p-2 border-bottom">
+                                            <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="...">
+                                            <div class="media-body align-self-center text-secondary">
+                                                <h5 class="my-0">Dear Steak with Potatoes</h5>
+                                                Welcome to Risotto restaurent website. Here we try to share our
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <span class="badge badge-light px-2">$25</span>
+                                    </div>
+                                    <!-- ROW 5 -->
+                                    <div class="col-11">
+                                        <div class="media p-2 border-bottom">
+                                            <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="...">
+                                            <div class="media-body align-self-center text-secondary">
+                                                <h5 class="my-0">Dear Steak with Potatoes</h5>
+                                                Welcome to Risotto restaurent website. Here we try to share our
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <span class="badge badge-light px-2">$25</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                ...
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                ...
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                ...
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    
 </body>
 </html>

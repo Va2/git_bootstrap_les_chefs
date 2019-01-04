@@ -7477,6 +7477,11 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
 .navbar .navbar-nav {
   width: 80%; }
   .navbar .navbar-nav li {
@@ -7512,6 +7517,27 @@ h1, h2, h3, h4, h5, h6 {
       #story .container .jumbotron h3 span {
         text-transform: uppercase;
         font-size: 2.2rem;
+        color: #c42d40; }
+      #story .container .jumbotron .media .media-body {
+        font-size: 0.8rem; }
+        #story .container .jumbotron .media .media-body h5 {
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+          font-size: 1rem;
+          color: #000; }
+      #story .container .jumbotron .media img {
+        width: 30%;
+        border: 4px solid #eaeaea; }
+      #story .container .jumbotron .nav-link {
+        color: #000; }
+        #story .container .jumbotron .nav-link i {
+          color: #cccccc; }
+      #story .container .jumbotron .active {
+        background: none; }
+        #story .container .jumbotron .active i {
+          color: #c42d40; }
+      #story .container .jumbotron .badge {
+        background: #efefef; }
+      #story .container .jumbotron .badge-light {
         color: #c42d40; }
   #story .tr-img {
     position: absolute;
