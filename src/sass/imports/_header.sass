@@ -1,10 +1,46 @@
-h3
-    font-family: 'Courgette', cursive
-    
-.bg-header
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../../public/images/banner1.jpg") no-repeat center center
-    height: 900px
-    -webkit-background-size: cover
-    -moz-background-size: cover
-    -o-background-size: cover
-    background-size: cover
+header
+    position: relative
+
+    h1,
+    h3
+        font-family: 'Courgette', cursive
+        
+    .bg-header
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../../public/images/banner1.jpg") no-repeat center center
+        height: 900px
+        -webkit-background-size: cover
+        -moz-background-size: cover
+        -o-background-size: cover
+        background-size: cover
+
+    .carousel
+        position: absolute !important
+        top: 0
+        height: 100%
+        width: 100%
+        color: #fff
+
+        .carousel-indicators li
+            width: 15px
+            height: 15px
+            border-radius: 50%
+        
+        .carousel-item
+            margin-top: 30%
+            text-align: center
+
+            h1
+                font-size: 24px
+
+                .text-lg
+                    font-size: 32px
+                    text-transform: uppercase
+
+                .text-md
+                    font-size: 30px
+                
+                .text-red
+                    color: #c42d40
+            
+            .btn
+                letter-spacing: 0

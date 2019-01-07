@@ -7496,16 +7496,42 @@ body {
 .navbar .logo {
   width: 35%; }
 
-h3 {
-  font-family: "Courgette", cursive; }
-
-.bg-header {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../../public/images/banner1.jpg") no-repeat center center;
-  height: 900px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+header {
+  position: relative; }
+  header h1,
+  header h3 {
+    font-family: "Courgette", cursive; }
+  header .bg-header {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../../public/images/banner1.jpg") no-repeat center center;
+    height: 900px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+  header .carousel {
+    position: absolute !important;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    color: #fff; }
+    header .carousel .carousel-indicators li {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%; }
+    header .carousel .carousel-item {
+      margin-top: 30%;
+      text-align: center; }
+      header .carousel .carousel-item h1 {
+        font-size: 24px; }
+        header .carousel .carousel-item h1 .text-lg {
+          font-size: 32px;
+          text-transform: uppercase; }
+        header .carousel .carousel-item h1 .text-md {
+          font-size: 30px; }
+        header .carousel .carousel-item h1 .text-red {
+          color: #c42d40; }
+      header .carousel .carousel-item .btn {
+        letter-spacing: 0; }
 
 .story {
   background: url("../../../public/images/main_bg.jpg"); }
