@@ -7620,4 +7620,33 @@ h1, h2, h3, h4, h5, h6 {
   background: #c22f43;
   border-color: #c22f43; }
 
+.bg-testimonials {
+  background: url("../../public/images/testimonials_background.jpg") no-repeat center center;
+  height: 400px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .bg-testimonials h3 span {
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    color: #c42d40; }
+  .bg-testimonials .border {
+    border: 5px solid #dee2e6 !important; }
+  .bg-testimonials .card {
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 1.25rem; }
+    .bg-testimonials .card .card-body .card-title,
+    .bg-testimonials .card .card-body .card-subtitle {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+    .bg-testimonials .card .card-body .card-title {
+      font-size: 18px; }
+    .bg-testimonials .card .card-body .card-subtitle {
+      color: #c42d40;
+      font-weight: 300; }
+    .bg-testimonials .card .card-body .card-text {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.9) !important; }
+
 /*# sourceMappingURL=style.css.map */
