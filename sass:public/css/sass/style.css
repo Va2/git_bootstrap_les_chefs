@@ -7500,7 +7500,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Courgette", cursive; }
 
 .bg-header {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../public/images/banner1.jpg) no-repeat center center;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../../public/images/banner1.jpg) no-repeat center center;
   height: 900px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -7508,7 +7508,7 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover; }
 
 .story {
-  background: url("../../public/images/main_bg.jpg"); }
+  background: url("../../../public/images/main_bg.jpg"); }
   .story .container {
     background: #fff;
     position: relative; }
@@ -7561,7 +7561,7 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 2.2rem;
       color: #c42d40; }
   #meet .book-form {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../public/images/book_table_bg.jpg") no-repeat center center;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../../public/images/book_table_bg.jpg") no-repeat center center;
     width: 80%;
     -webkit-background-size: cover;
     -moz-background-size: cover;

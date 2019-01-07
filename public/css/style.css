@@ -7500,7 +7500,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Courgette", cursive; }
 
 .bg-header {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../public/images/banner1.jpg) no-repeat center center;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../../public/images/banner1.jpg") no-repeat center center;
   height: 900px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -7508,7 +7508,7 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover; }
 
 .story {
-  background: url("../../public/images/main_bg.jpg"); }
+  background: url("../../../public/images/main_bg.jpg"); }
   .story .container {
     background: #fff;
     position: relative; }
@@ -7561,7 +7561,7 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 2.2rem;
       color: #c42d40; }
   #meet .book-form {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../public/images/book_table_bg.jpg") no-repeat center center;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../../public/images/book_table_bg.jpg") no-repeat center center;
     width: 80%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -7570,7 +7570,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 25px; }
 
 #book .book-form {
-  background: url("../../public/images/book_table_bg.jpg") no-repeat center center;
+  background: url("../../../public/images/book_table_bg.jpg") no-repeat center center;
   width: 80%;
   height: 100%;
   -webkit-background-size: cover;
@@ -7621,7 +7621,7 @@ h1, h2, h3, h4, h5, h6 {
   border-color: #c22f43; }
 
 .bg-testimonials {
-  background: url("../../public/images/testimonials_background.jpg") no-repeat center center;
+  background: url("../../../public/images/testimonials_background.jpg") no-repeat center center;
   height: 400px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -7648,5 +7648,20 @@ h1, h2, h3, h4, h5, h6 {
     .bg-testimonials .card .card-body .card-text {
       font-size: 14px;
       color: rgba(255, 255, 255, 0.9) !important; }
+
+.bg-contact {
+  background: url("../../../public/images/main_bg.jpg"); }
+  .bg-contact h3 span {
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    color: #c42d40; }
+  .bg-contact .contact-box {
+    width: 40%;
+    margin: 0 auto;
+    padding: 25px 35px;
+    background: #c42d40;
+    border-radius: 15px; }
+    .bg-contact .contact-box hr {
+      border-top: 1px solid rgba(255, 255, 255, 0.8); }
 
 /*# sourceMappingURL=style.css.map */
