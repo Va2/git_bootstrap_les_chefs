@@ -7496,7 +7496,7 @@ body {
 .navbar .logo {
   width: 35%; }
 
-h1, h2, h3, h4, h5, h6 {
+h3 {
   font-family: "Courgette", cursive; }
 
 .bg-header {
@@ -7663,5 +7663,20 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 15px; }
     .bg-contact .contact-box hr {
       border-top: 1px solid rgba(255, 255, 255, 0.8); }
+
+.bg-footer {
+  background: url("../../../public/images/footer_background.jpg") no-repeat center center;
+  height: 300px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .bg-footer h4 {
+    text-transform: uppercase;
+    font-weight: 300; }
+  .bg-footer p {
+    font-size: 0.8rem; }
+  .bg-footer .btn {
+    text-transform: none; }
 
 /*# sourceMappingURL=style.css.map */
