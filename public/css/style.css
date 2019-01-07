@@ -7679,4 +7679,8 @@ h3 {
   .bg-footer .btn {
     text-transform: none; }
 
+.red {
+  background: #c42d40;
+  height: 60px; }
+
 /*# sourceMappingURL=style.css.map */
