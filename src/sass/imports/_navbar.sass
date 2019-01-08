@@ -14,8 +14,24 @@
         .active
             background: $primary
 
+        // MEDIA QUERIES
+        @media only screen and (max-width: 768px)
+            .navbar-brand
+                display: none
+        @media only screen and (max-width: 576px)
+            .navbar-brand
+                display: none
+
     .logo
         width: 35%
+
+// MEDIA QUERIES
+@media only screen and (max-width: 768px)
+    .collapse
+        display: flex
+@media only screen and (max-width: 576px)
+    .collapse
+        display: flex
 
 // NAVBAR STYLE WHEN SCROLL DOWN
 .fixed-top.scrolled 

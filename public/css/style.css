@@ -11721,9 +11721,21 @@ body .btn-primary:hover {
       text-transform: uppercase; }
   .navbar .navbar-nav .active {
     background: #c42d40; }
+  @media only screen and (max-width: 768px) {
+    .navbar .navbar-nav .navbar-brand {
+      display: none; } }
+  @media only screen and (max-width: 576px) {
+    .navbar .navbar-nav .navbar-brand {
+      display: none; } }
 .navbar .logo {
   width: 35%; }
 
+@media only screen and (max-width: 768px) {
+  .collapse {
+    display: flex; } }
+@media only screen and (max-width: 576px) {
+  .collapse {
+    display: flex; } }
 .fixed-top.scrolled {
   background: #931322;
   transition: background-color 200ms linear; }
