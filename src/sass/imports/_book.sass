@@ -24,13 +24,17 @@
         border: none
 
         .card-body
-            p
-                position: relative
+        .transform-badge
+            -ms-transform: translate(25px, -38px)       /* IE 9 */
+            -webkit-transform: translate(25px, -38px)   /* Safari */
+            transform: translate(25px, -38px)
 
+            p
+                // position: relative
                 .badge
-                    position: absolute
-                    top: -39px
-                    left: 25px
+                    // position: absolute
+                    // top: -39px
+                    // left: 25px
                     background: #c22f43
                     font-size: 18px
                     font-weight: 100
@@ -48,14 +52,3 @@
         .card-img-top
             border: 5px solid #eaeaea
             border-radius: 15px
-        
-.btn 
-    border-radius: 1.25rem
-    text-transform: uppercase
-    font-size: 0.8rem
-    font-weight: 100
-    letter-spacing: 0.5px
-
-.btn-primary
-    background: #c22f43
-    border-color: #c22f43

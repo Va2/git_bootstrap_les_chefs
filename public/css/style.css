@@ -11689,10 +11689,18 @@ body {
   body h1,
   body h3 {
     font-family: "Courgette", cursive; }
-  body h3 {
-    border-bottom: 1px solid transparent;
-    padding-top: 15px;
-    border-image: url("../../../public/images/bottom_decoration_img.png"); }
+  body .btn {
+    border-radius: 1.25rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 100;
+    letter-spacing: 0.5px; }
+  body .btn-primary {
+    background: #c22f43;
+    border-color: #c22f43; }
+  body .btn-primary:hover {
+    background: #b52939;
+    border-color: #b52939; }
 
 .navbar .navbar-nav {
   width: 80%; }
@@ -11827,36 +11835,24 @@ header {
     border-radius: 0.7rem; }
 #book .card {
   border: none; }
-  #book .card .card-body p {
-    position: relative; }
-    #book .card .card-body p .badge {
-      position: absolute;
-      top: -39px;
-      left: 25px;
+  #book .card .transform-badge {
+    -ms-transform: translate(25px, -38px);
+    -webkit-transform: translate(25px, -38px);
+    transform: translate(25px, -38px); }
+    #book .card .transform-badge p .badge {
       background: #c22f43;
       font-size: 18px;
       font-weight: 100; }
-      #book .card .card-body p .badge .nbr {
+      #book .card .transform-badge p .badge .nbr {
         font-size: 22px;
         font-weight: 700; }
-  #book .card .card-body .card-title {
-    font-size: 1rem; }
-  #book .card .card-body .card-text {
-    font-size: 0.9rem; }
+    #book .card .transform-badge .card-title {
+      font-size: 1rem; }
+    #book .card .transform-badge .card-text {
+      font-size: 0.9rem; }
   #book .card .card-img-top {
     border: 5px solid #eaeaea;
     border-radius: 15px; }
-
-.btn {
-  border-radius: 1.25rem;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  font-weight: 100;
-  letter-spacing: 0.5px; }
-
-.btn-primary {
-  background: #c22f43;
-  border-color: #c22f43; }
 
 .bg-testimonials {
   background: url("../../../public/images/testimonials_background.jpg") no-repeat center center;
@@ -11913,6 +11909,12 @@ header {
     font-weight: 300; }
   .bg-footer p {
     font-size: 0.8rem; }
+  .bg-footer a i {
+    color: #fff; }
+  .bg-footer a:hover {
+    text-decoration: none; }
+    .bg-footer a:hover i:hover {
+      color: #c42d40; }
   .bg-footer .btn {
     text-transform: none; }
 
