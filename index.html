@@ -6,15 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vadim Brieven</title>
     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
-    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="./public/css/style.css">
 </head>
 <body>
     <!-- NAVBAR & HEADER -->
-    <header>
+    <header id="header">
         <div class="bg-header">
             <!-- NAVBAR SECTION -->
-            <nav class="navbar navbar-expand-lg container">
+            <nav id="my-nav" class="navbar navbar-expand-lg fixed-top container">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -23,35 +22,35 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav align-items-center justify-content-between border-top border-bottom">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#header">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" href="#story-menu">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Menu List</a>
+                            <a class="nav-link" href="#story-menu">Menu List</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Team</a>
+                            <a class="nav-link" href="#meet">Team</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav align-items-center justify-content-center logo">
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand" href="#header">
                             <img src="./public/images/logo.png" alt="Logo">
                         </a>
                     </ul>
                     <ul class="navbar-nav align-items-center justify-content-between border-top border-bottom">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Reservation</a>
+                            <a class="nav-link" href="#book">Reservation</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
+                            <a class="nav-link" href="#book">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Testimonials</a>
+                            <a class="nav-link" href="#testimonials">Testimonials</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
+                            <a class="nav-link" href="#contact">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -100,6 +99,10 @@
         </div>
     </header>
 
+    <!-- HEDAER - BORDER IMG DECORATION -->
+    <section class="header-border">
+    </section>
+
     <!-- OUR STORY & OUR MENU SECTION -->
     <section id="story-menu" class="py-5 story">
         <div class="container p-0">
@@ -120,7 +123,10 @@
 
             <!-- OUR STORY -->
             <div class="jumbotron our-story py-0 text-center">
-                <h3><span>Our</span> Story</h3>
+                <div>
+                    <h3 class="mb-0"><span>Our</span> Story</h3>
+                    <img src="./public/images/decoration_line.png" alt="">
+                </div>
                 <div class="col-md-6 offset-md-3">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos numquam mollitia aspernatur nobis nihil exercitationem deleniti. Facilis quae, nihil debitis reprehenderit quas consequatur explicabo. Dolorum unde voluptatibus sapiente tempore aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae id sapiente eveniet quasi nesciunt quam, cum a beatae cumque, error quaerat, illum ab quod accusamus! Aperiam nostrum laudantium ratione nihil.</p>
                 </div>
@@ -511,8 +517,11 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-footer py-5">
-        <div class="container">
+    <footer class="bg-footer">
+        <div class="footer-border">
+        </div>
+
+        <div class="container py-5">
             <div class="row text-white">
                 <div class="col-md-4">
                     <h4>About Us</h4>
@@ -565,5 +574,31 @@
     <!-- SCRIPTS -->
     <script src="./node_modules/jquery/dist/jquery.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- <script src="./public/js/navbar.js"></script> -->
+    <script>
+        // $(function () {
+        //     $(document).scroll(function () {
+        //         var $nav = $(".navbar-fixed-top");
+        //         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        //     });
+        // });
+
+        // var myNav = document.getElementById('my-nav');
+        // window.onscroll = function () {
+        //     "use strict";
+        //     if (document.body.scrollTop >= 100) {
+        //         myNav.classList.add("nav-colored");
+        //         myNav.classList.remove("nav-transparent");
+        //     }
+        //     else {
+        //         myNav.classList.add("nav-transparent");
+        //         myNav.classList.remove("nav-colored");
+        //     }
+        // };
+
+        $(window).scroll(function () {
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+        });
+    </script>
 </body>
 </html>
