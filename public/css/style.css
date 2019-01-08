@@ -11682,25 +11682,26 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
-body {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
-  body h1,
-  body h3 {
-    font-family: "Courgette", cursive; }
-  body .btn {
-    border-radius: 1.25rem;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    font-weight: 100;
-    letter-spacing: 0.5px; }
-  body .btn-primary {
-    background: #c22f43;
-    border-color: #c22f43; }
-  body .btn-primary:hover {
-    background: #b52939;
-    border-color: #b52939; }
+
+body h1,
+body h3 {
+  font-family: "Courgette", cursive; }
+body .btn {
+  border-radius: 1.25rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 100;
+  letter-spacing: 0.5px; }
+body .btn-primary {
+  background: #c22f43;
+  border-color: #c22f43; }
+body .btn-primary:hover {
+  background: #b52939;
+  border-color: #b52939; }
 
 .navbar .navbar-nav {
   width: 80%; }
@@ -11715,6 +11716,10 @@ body {
     background: #c42d40; }
 .navbar .logo {
   width: 35%; }
+
+.fixed-top.scrolled {
+  background: #931322;
+  transition: background-color 200ms linear; }
 
 header {
   position: relative; }
@@ -11749,6 +11754,12 @@ header {
           color: #c42d40; }
       header .carousel .carousel-item .btn {
         letter-spacing: 0; }
+    @media only screen and (max-width: 768px) {
+      header .carousel .carousel-item {
+        margin-top: 60%; } }
+    @media only screen and (max-width: 576px) {
+      header .carousel .carousel-item {
+        margin-top: 130%; } }
 
 .header-border {
   background-color: #2e2e2e;
@@ -11857,7 +11868,8 @@ header {
     #book .card .transform-badge {
       -ms-transform: translate(135px, -38px);
       -webkit-transform: translate(135px, -38px);
-      transform: translate(135px, -38px); } }
+      transform: translate(135px, -38px);
+      font-size: 12px; } }
   @media only screen and (max-width: 576px) {
     #book .card .transform-badge {
       -ms-transform: translate(-20px, -38px);
