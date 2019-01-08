@@ -9,52 +9,53 @@
     <link rel="stylesheet" href="./public/css/style.css">
 </head>
 <body>
-    <!-- NAVBAR & HEADER -->
+    <!-- NAVBAR -->
+    <nav id="my-nav" class="navbar navbar-expand-lg navbar-dark fixed-top container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav align-items-center justify-content-between border-top border-bottom">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#header">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#story-menu">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#story-menu">Menu List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#meet">Team</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav align-items-center justify-content-center logo">
+                <a class="navbar-brand" href="#header">
+                    <img src="./public/images/logo.png" alt="Logo">
+                </a>
+            </ul>
+            <ul class="navbar-nav align-items-center justify-content-between border-top border-bottom">
+                <li class="nav-item">
+                    <a class="nav-link" href="#book">Reservation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#book">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonials">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
     <header id="header">
         <div class="bg-header">
-            <!-- NAVBAR SECTION -->
-            <nav id="my-nav" class="navbar navbar-expand-lg fixed-top container">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-        
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav align-items-center justify-content-between border-top border-bottom">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#header">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#story-menu">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#story-menu">Menu List</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#meet">Team</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav align-items-center justify-content-center logo">
-                        <a class="navbar-brand" href="#header">
-                            <img src="./public/images/logo.png" alt="Logo">
-                        </a>
-                    </ul>
-                    <ul class="navbar-nav align-items-center justify-content-between border-top border-bottom">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#book">Reservation</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#book">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#testimonials">Testimonials</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
         </div>
 
         <!-- CAROUSEL -->
@@ -125,7 +126,7 @@
             <div class="jumbotron our-story py-0 text-center">
                 <h3 class="m-0"><span>Our</span> Story</h3>
                 <img class="mb-5" src="./public/images/decoration_line.png" alt="">
-                <div class="col-md-6 offset-md-3">
+                <div class="col-lg-6 offset-lg-3">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos numquam mollitia aspernatur nobis nihil exercitationem deleniti. Facilis quae, nihil debitis reprehenderit quas consequatur explicabo. Dolorum unde voluptatibus sapiente tempore aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae id sapiente eveniet quasi nesciunt quam, cum a beatae cumque, error quaerat, illum ab quod accusamus! Aperiam nostrum laudantium ratione nihil.</p>
                 </div>
             </div>
@@ -135,7 +136,8 @@
                 <h3 class="m-0"><span>Our</span> Menu List</h3>
                 <img class="mb-5" src="./public/images/decoration_line.png" alt="">
                 <div class="row pb-5">
-                    <div class="col-2">
+                    <!-- TABS NAV -->
+                    <div class="col-lg-2">
                         <div class="nav flex-column nav-pills border-right" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                             <a class="nav-link border-bottom active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
                                 aria-controls="v-pills-home" aria-selected="true">
@@ -159,7 +161,8 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-5">
+                    <!-- MENU COLUMN 1 -->
+                    <div class="col-lg-5">
                         <div class="tab-content" id="v-pills-tabContent">
                             <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                                 <div class="row align-items-center text-left">
@@ -231,17 +234,216 @@
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                                ...
+                                <div class="row align-items-center text-left">
+                                    <!-- ROW 1 -->
+                                    <div class="col-11">
+                                        <div class="media p-2 border-bottom">
+                                            <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="...">
+                                            <div class="media-body align-self-center text-secondary">
+                                                <h5 class="my-0">Dear Steak with Potatoes</h5>
+                                                Welcome to Risotto restaurent website. Here we try to share our
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <span class="badge badge-light px-2">$25</span>
+                                    </div>
+                                    <!-- ROW 2 -->
+                                    <div class="col-11">
+                                        <div class="media p-2 border-bottom">
+                                            <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="...">
+                                            <div class="media-body align-self-center text-secondary">
+                                                <h5 class="my-0">Dear Steak with Potatoes</h5>
+                                                Welcome to Risotto restaurent website. Here we try to share our
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <span class="badge badge-light px-2">$25</span>
+                                    </div>
+                                    <!-- ROW 3 -->
+                                    <div class="col-11">
+                                        <div class="media p-2 border-bottom">
+                                            <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="...">
+                                            <div class="media-body align-self-center text-secondary">
+                                                <h5 class="my-0">Dear Steak with Potatoes</h5>
+                                                Welcome to Risotto restaurent website. Here we try to share our
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <span class="badge badge-light px-2">$25</span>
+                                    </div>
+                                    <!-- ROW 4 -->
+                                    <div class="col-11">
+                                        <div class="media p-2 border-bottom">
+                                            <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="...">
+                                            <div class="media-body align-self-center text-secondary">
+                                                <h5 class="my-0">Dear Steak with Potatoes</h5>
+                                                Welcome to Risotto restaurent website. Here we try to share our
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <span class="badge badge-light px-2">$25</span>
+                                    </div>
+                                    <!-- ROW 5 -->
+                                    <div class="col-11">
+                                        <div class="media p-2 border-bottom">
+                                            <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="...">
+                                            <div class="media-body align-self-center text-secondary">
+                                                <h5 class="my-0">Dear Steak with Potatoes</h5>
+                                                Welcome to Risotto restaurent website. Here we try to share our
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <span class="badge badge-light px-2">$25</span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                                ...
+                                <div class="row align-items-center text-left">
+                                    <!-- ROW 1 -->
+                                    <div class="col-11">
+                                        <div class="media p-2 border-bottom">
+                                            <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="...">
+                                            <div class="media-body align-self-center text-secondary">
+                                                <h5 class="my-0">Dear Steak with Potatoes</h5>
+                                                Welcome to Risotto restaurent website. Here we try to share our
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <span class="badge badge-light px-2">$25</span>
+                                    </div>
+                                    <!-- ROW 2 -->
+                                    <div class="col-11">
+                                        <div class="media p-2 border-bottom">
+                                            <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="...">
+                                            <div class="media-body align-self-center text-secondary">
+                                                <h5 class="my-0">Dear Steak with Potatoes</h5>
+                                                Welcome to Risotto restaurent website. Here we try to share our
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <span class="badge badge-light px-2">$25</span>
+                                    </div>
+                                    <!-- ROW 3 -->
+                                    <div class="col-11">
+                                        <div class="media p-2 border-bottom">
+                                            <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="...">
+                                            <div class="media-body align-self-center text-secondary">
+                                                <h5 class="my-0">Dear Steak with Potatoes</h5>
+                                                Welcome to Risotto restaurent website. Here we try to share our
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <span class="badge badge-light px-2">$25</span>
+                                    </div>
+                                    <!-- ROW 4 -->
+                                    <div class="col-11">
+                                        <div class="media p-2 border-bottom">
+                                            <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="...">
+                                            <div class="media-body align-self-center text-secondary">
+                                                <h5 class="my-0">Dear Steak with Potatoes</h5>
+                                                Welcome to Risotto restaurent website. Here we try to share our
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <span class="badge badge-light px-2">$25</span>
+                                    </div>
+                                    <!-- ROW 5 -->
+                                    <div class="col-11">
+                                        <div class="media p-2 border-bottom">
+                                            <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="...">
+                                            <div class="media-body align-self-center text-secondary">
+                                                <h5 class="my-0">Dear Steak with Potatoes</h5>
+                                                Welcome to Risotto restaurent website. Here we try to share our
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <span class="badge badge-light px-2">$25</span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                                ...
+                                <div class="row align-items-center text-left">
+                                    <!-- ROW 1 -->
+                                    <div class="col-11">
+                                        <div class="media p-2 border-bottom">
+                                            <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="...">
+                                            <div class="media-body align-self-center text-secondary">
+                                                <h5 class="my-0">Dear Steak with Potatoes</h5>
+                                                Welcome to Risotto restaurent website. Here we try to share our
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <span class="badge badge-light px-2">$25</span>
+                                    </div>
+                                    <!-- ROW 2 -->
+                                    <div class="col-11">
+                                        <div class="media p-2 border-bottom">
+                                            <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="...">
+                                            <div class="media-body align-self-center text-secondary">
+                                                <h5 class="my-0">Dear Steak with Potatoes</h5>
+                                                Welcome to Risotto restaurent website. Here we try to share our
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <span class="badge badge-light px-2">$25</span>
+                                    </div>
+                                    <!-- ROW 3 -->
+                                    <div class="col-11">
+                                        <div class="media p-2 border-bottom">
+                                            <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="...">
+                                            <div class="media-body align-self-center text-secondary">
+                                                <h5 class="my-0">Dear Steak with Potatoes</h5>
+                                                Welcome to Risotto restaurent website. Here we try to share our
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <span class="badge badge-light px-2">$25</span>
+                                    </div>
+                                    <!-- ROW 4 -->
+                                    <div class="col-11">
+                                        <div class="media p-2 border-bottom">
+                                            <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="...">
+                                            <div class="media-body align-self-center text-secondary">
+                                                <h5 class="my-0">Dear Steak with Potatoes</h5>
+                                                Welcome to Risotto restaurent website. Here we try to share our
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <span class="badge badge-light px-2">$25</span>
+                                    </div>
+                                    <!-- ROW 5 -->
+                                    <div class="col-11">
+                                        <div class="media p-2 border-bottom">
+                                            <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="...">
+                                            <div class="media-body align-self-center text-secondary">
+                                                <h5 class="my-0">Dear Steak with Potatoes</h5>
+                                                Welcome to Risotto restaurent website. Here we try to share our
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <span class="badge badge-light px-2">$25</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-5">
+                    <!-- MENU COLUMN 2 -->
+                    <div class="col-lg-5">
                         <div class="tab-content" id="v-pills-tabContent">
                             <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                                 <div class="row align-items-center text-left">
@@ -334,19 +536,19 @@
             <h3 class="m-0"><span>Meet</span> Our Chef</h3>
             <img class="mb-5" src="./public/images/decoration_line.png" alt="">
             <div class="row text-white">
-                <div class="col-md-3">
+                <div class="col-lg-3">
                     <img class="border-bottom" src="./public/images/chef1.png" alt="">
                     <p>Lorem Ipsum</p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3">
                     <img class="border-bottom" src="./public/images/chef2.png" alt="">
                     <p>Lorem Ipsum</p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3">
                     <img class="border-bottom" src="./public/images/chef3.png" alt="">
                     <p>Lorem Ipsum</p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3">
                     <img class="border-bottom" src="./public/images/chef4.png" alt="">
                     <p>Lorem Ipsum</p>
                 </div>
@@ -433,7 +635,7 @@
                 <h3 class="m-0"><span>Our</span> Blog</h3>
                 <img class="mb-5" src="./public/images/decoration_line.png" alt="">
                 <div class="row">
-                    <div class="col-md-5 offset-md-1">
+                    <div class="col-lg-5 offset-lg-1">
                         <div class="card">
                             <img src="./public/images/blog_img1.jpg" class="card-img-top" alt="...">
                             <div class="card-body text-left transform-badge">
@@ -445,7 +647,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-lg-5">
                         <div class="card">
                             <img src="./public/images/blog_img2.jpg" class="card-img-top" alt="...">
                             <div class="card-body text-left transform-badge">
@@ -471,7 +673,7 @@
                 <h3 class="pt-5 text-white"><span>Client</span> Testimonials</h3>
                 <img class="mb-5 text-center" src="./public/images/decoration_line.png" alt="">
             </div>
-            <div class="row">
+            <div class="row pb-5">
                 <div class="col-md-2">
                     <img src="./public/images/testimonial1.jpg" alt="" class="img-fluid border rounded-circle">
                 </div>
@@ -610,9 +812,9 @@
         //     }
         // };
 
-        $(window).scroll(function () {
-            $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
-        });
+        // $(window).scroll(function () {
+        //     $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+        // });
     </script>
 </body>
 </html>

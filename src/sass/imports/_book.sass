@@ -1,4 +1,5 @@
 #book
+    // BOOK TABLE
     .book-form
         background: url("../../../public/images/book_table_bg.jpg") no-repeat center center
         width: 80%
@@ -20,6 +21,7 @@
         .form-control
             border-radius: 0.7rem
 
+    // OUR BLOG
     .card
         border: none
 
@@ -30,11 +32,7 @@
             transform: translate(25px, -38px)
 
             p
-                // position: relative
                 .badge
-                    // position: absolute
-                    // top: -39px
-                    // left: 25px
                     background: #c22f43
                     font-size: 18px
                     font-weight: 100
@@ -52,3 +50,16 @@
         .card-img-top
             border: 5px solid #eaeaea
             border-radius: 15px
+
+        // MEDIA QUERIES
+        @media only screen and (max-width: 768px)
+            .transform-badge
+                -ms-transform: translate(135px, -38px)       /* IE 9 */
+                -webkit-transform: translate(135px, -38px)   /* Safari */
+                transform: translate(135px, -38px)
+
+        @media only screen and (max-width: 576px)
+            .transform-badge
+                -ms-transform: translate(-20px, -38px)       /* IE 9 */
+                -webkit-transform: translate(-20px, -38px)   /* Safari */
+                transform: translate(-20px, -38px)
