@@ -11685,11 +11685,15 @@ a.text-dark:hover, a.text-dark:focus {
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  scroll-behavior: smooth; }
 
+@font-face {
+  font-family: "courgette";
+  src: url("../fonts/Courgette-Regular.ttf"); }
 body h1,
 body h3 {
-  font-family: "Courgette", cursive; }
+  font-family: "courgette", cursive; }
 body .btn {
   border-radius: 1.25rem;
   text-transform: uppercase;
@@ -11703,6 +11707,9 @@ body .btn-primary:hover {
   background: #b52939;
   border-color: #b52939; }
 
+@media only screen and (max-width: 768px) {
+  .md-hide-img {
+    display: none; } }
 .navbar .navbar-nav {
   width: 80%; }
   .navbar .navbar-nav li {

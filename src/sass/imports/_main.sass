@@ -2,18 +2,16 @@
     box-sizing: border-box
     margin: 0
     padding: 0
+    scroll-behavior: smooth
+
+@font-face
+    font-family: 'courgette'
+    src: url("../fonts/Courgette-Regular.ttf")
 
 body
-    // @font-face
-    // font-family: 'courgette'
-    // src: url("../../../public/fonts/Courgette-Regular.ttf") format("truetype")
-
-    // $font-main: 'cougette', cursive
-
     h1,
     h3
-        font-family: 'Courgette', cursive
-        // font-family: $font-main
+        font-family: $font-main
 
     .btn 
         border-radius: 1.25rem
@@ -29,3 +27,8 @@ body
     .btn-primary:hover
         background: #b52939
         border-color: #b52939
+
+// MEDIA QUERIES
+@media only screen and (max-width: 768px)
+    .md-hide-img
+        display: none
